@@ -11,6 +11,7 @@ const PORT = 3000;
 const DB = "mongodb+srv://Karan:qwerty123@cluster0.oxrmvya.mongodb.net/?retryWrites=true&w=majority";
 
 // middleware
+app.use(express.json());
 app.use(authRouter);
 
 // CONNECTIONS
